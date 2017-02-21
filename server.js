@@ -1,11 +1,11 @@
 var express = require("express");
 var app = express();
 
-app.set('view engine', 'pug');
-
+app.set('view engine', 'pug'); // set pug module viewer for node server
+app.use(express.static('public'));
 app.get('/', function(req,res){
     
-    res.render('index');
+    res.render('index');  //render view/index.pug file on localhost
 })
 
 app.listen(3000, function(Error){
