@@ -9,4 +9,12 @@ gulp.task('styles', function(){
     .pipe(gulp.dest('public'));
 })
 
-gulp.task('default', ['styles']);
+//takes all files from Assets folder to Public folder
+gulp.task('assets', function(){  
+  gulp
+    .src('assets/*')
+    .pipe(gulp.dest('public'));
+})
+
+//runs all task listed by default
+gulp.task('default', ['styles','assets']);
