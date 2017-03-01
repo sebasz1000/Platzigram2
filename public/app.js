@@ -1215,7 +1215,7 @@ page('/', function (ctx, next) {
 });
 
 page('/signup', function (ctx, next) {
-  main.innerHTML = "<a href='/''>Ir a HOME</a>";
+  main.innerHTML = "<a href='/''>Ir a HOMEsdfsd</a>";
 });
 
 page();

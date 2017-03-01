@@ -30,5 +30,15 @@ gulp.task('scripts', function(){
   .pipe(gulp.dest('public'));
 })
 
+
+
+
+
 //runs all task listed by default
-gulp.task('default', ['styles','assets','scripts']);
+gulp.task('watch', [], function(){
+  
+  gulp.watch(['index.scss', './src/index.js' , './assets/*.*'], ['styles', 'scripts','assets']).on('ch  ange', function(event){
+  console.log(event.path + " " + event.type);
+});
+  
+});
