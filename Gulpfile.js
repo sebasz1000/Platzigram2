@@ -1,7 +1,11 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var rename = require('gulp-rename')
-gulp.task('styles', function(){
+var browserify = require('browserify');
+var babelify = require('babelify');
+var source = require('vinyl-source-stream')
+
+gulp.task('styles', function(){  //task transform scss to css
     gulp
     .src('index.scss')
     .pipe(sass())
@@ -16,5 +20,15 @@ gulp.task('assets', function(){
     .pipe(gulp.dest('public'));
 })
 
+gulp.task('scripts', function(){
+  
+  browserify('./src/index.js')
+  .transform(babelify , {presets: ['es2015']})
+  .bundle()
+  .pipe(source('index.js'))  //vinylsource stream 
+  .pipe(rename('app.js'))
+  .pipe(gulp.dest('public'));
+})
+
 //runs all task listed by default
-gulp.task('default', ['styles','assets']);
+gulp.task('default', ['styles','assets','scripts']);
