@@ -1,5 +1,14 @@
-var numbers = [ 3, 4, 5 ];
+var page = require("page");
 
-var numb = numbers.map( n => n + 1 );
+var main = document.getElementById("main-container");
 
-console.log(numb);
+page('/', function(ctx, next) {
+  main.innerHTML = "<a href='/signup'>Ir a SIGNUP</a>";
+})
+
+page('/signup', function(ctx, next){
+  main.innerHTML = "<a href='/''>Ir a HOME</a>";
+})
+
+
+page();
