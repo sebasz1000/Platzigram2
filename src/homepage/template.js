@@ -1,3 +1,3 @@
 var yo = require('yo-yo');
 
-module.exports = yo`<a href="/">ir a HOME</a>`
+module.exports = yo`<a href="/signup">ir a Signup</a>`
