@@ -34,11 +34,15 @@ gulp.task('scripts', function(){
 
 
 
-//runs all task listed by default
-gulp.task('watch', [], function(){
+gulp.task('watch', ['styles', 'scripts','assets'], function(){
   
-  gulp.watch(['index.scss', './src/index.js' , './assets/*.*'], ['styles', 'scripts','assets']).on('ch  ange', function(event){
+  gulp
+    .watch(['index.scss', './src/**' , './assets/*.*'], ['styles', 'scripts','assets']).on('change', function(event){
   console.log(event.path + " " + event.type);
-});
+});  //watch ./src/** to watch all templates.js an index.js in src
   
-});
+})
+
+
+//runs all task listed by default  ** npm build **
+gulp.task('default', ['styles', 'scripts','assets']);
