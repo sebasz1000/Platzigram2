@@ -30,6 +30,7 @@ body{
   margin-top: 36px;
 }
 
+
 .landing{
   margin: 120px auto;
 }
@@ -37,7 +38,42 @@ body{
   padding:30px 0;
 }
 
+$avatar-size: 48px;
 
+.avatar{
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+.card small.time{
+  line-height: $avatar-size;
+}
+
+.card p{
+  padding: 20px 0;
+}
+.card .likes{
+  line-height: 30px;
+  margin-left: 12px;
+}
+
+.card i{
+  font-size: 30px;
+}
+
+.card .fa-heart-o{
+  color: $secondary-color;
+}
+.card .card-content .card-title{
+  display: inline;
+}
+.card .card-content .card-title span.username{
+  line-height: $avatar-size;
+  color: $secondary-color;
+}
 .iphoneimg{
     align-content: center;
     max-width: 80%;

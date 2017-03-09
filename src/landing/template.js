@@ -16,4 +16,4 @@ module.exports = function landing(box) {
   
 }
 
-//here we put an element box depending it we are in sign in or singup
+//here we put an element box depending it we are in sign in or singupº
