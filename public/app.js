@@ -2652,7 +2652,7 @@ module.exports = function landing(box) {
 },{"yo-yo":15}],22:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<div>\n<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo platzigram">Platzigram</a>\n        </div>\n        <div class="col s2 push-s10 m6 push-m10">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>\n  <div class="content">\n  ', '\n  </div>\n  </div>'], ['<div>\n<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo platzigram">Platzigram</a>\n        </div>\n        <div class="col s2 push-s10 m6 push-m10">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>\n  <div class="content">\n  ', '\n  </div>\n  </div>']);
+var _templateObject = _taggedTemplateLiteral(['<div>\n<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo platzigram">Platzigram</a>\n        </div>\n        <div class="col s2 push-s10 m2 push-m3">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>\n  <div class="content">\n  ', '\n  </div>\n  </div>'], ['<div>\n<nav class="header">\n  <div class="nav-wrapper">\n    <div class="container">\n      <div class="row">\n        <div class="col s12 m6 offset-m1">\n          <a href="/" class="brand-logo platzigram">Platzigram</a>\n        </div>\n        <div class="col s2 push-s10 m2 push-m3">\n          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n            <i class="fa fa-user" aria-hidden="true"></i>\n          </a>\n          <ul id="drop-user" class="dropdown-content">\n            <li><a href="#">Salir</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</nav>\n  <div class="content">\n  ', '\n  </div>\n  </div>']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -2666,20 +2666,31 @@ module.exports = function layout(content) {
 },{"yo-yo":15}],23:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<div class="card">\n    <div class="card-image">\n      <img class="activator" src="', '">\n    </div>\n    <div class="card-content">\n      <a href="/user/', '" class="card-title">\n        <img src="', '" class="avatar"/>\n        <span class="username">', '</span>\n      </a>\n      <small class="right time">Hace 1 d\xEDa</small>\n      <p>\n        <a href="#" class="left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>\n        <span class="left likes">', ' me gustan</span>\n      </p>\n   </div>\n  </div>'], ['<div class="card">\n    <div class="card-image">\n      <img class="activator" src="', '">\n    </div>\n    <div class="card-content">\n      <a href="/user/', '" class="card-title">\n        <img src="', '" class="avatar"/>\n        <span class="username">', '</span>\n      </a>\n      <small class="right time">Hace 1 d\xEDa</small>\n      <p>\n        <a href="#" class="left"><i class="fa fa-heart-o" aria-hidden="true"></i></a>\n        <span class="left likes">', ' me gustan</span>\n      </p>\n   </div>\n  </div>']);
+var _templateObject = _taggedTemplateLiteral(['<div class="card">\n    <div class="card-image">\n      <img class="activator" src="', '">\n    </div>\n    <div class="card-content">\n      <a href="/user/', '" class="card-title">\n        <img src="', '" class="avatar"/>\n        <span class="username">', '</span>\n      </a>\n      <small class="right time">Hace 1 d\xEDa</small>\n      <p>\n        <a href="#" class="left" onclick=', '><i class="fa fa-heart-o" aria-hidden="true"></i></a>\n        <span class="left likes">', ' me gustan</span>\n      </p>\n   </div>\n  </div>'], ['<div class="card">\n    <div class="card-image">\n      <img class="activator" src="', '">\n    </div>\n    <div class="card-content">\n      <a href="/user/', '" class="card-title">\n        <img src="', '" class="avatar"/>\n        <span class="username">', '</span>\n      </a>\n      <small class="right time">Hace 1 d\xEDa</small>\n      <p>\n        <a href="#" class="left" onclick=', '><i class="fa fa-heart-o" aria-hidden="true"></i></a>\n        <span class="left likes">', ' me gustan</span>\n      </p>\n   </div>\n  </div>']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var yo = require('yo-yo');
 
-module.exports = function (pic) {
-  var typeheart;
-  if (pic.liked) {
-    typeheart = 'fa-heart';
-  } else {
-    typeheart = 'fa-heart-o';
+module.exports = function pictureCard(pic) {
+
+  var el;
+
+  function render(picture) {
+
+    return yo(_templateObject, picture.url, picture.user.username, picture.user.avatar, picture.user.name, like, picture.likes);
   }
-  return yo(_templateObject, pic.url, pic.user.username, pic.user.avatar, pic.user.name, pic.likes);
+
+  function like() {
+    pic.liked = true;
+    pic.likes++;
+    var newEl = render(pic);
+    yo.update(el, newEl);
+    return false;
+  }
+
+  el = render(pic);
+  return el;
 };
 
 },{"yo-yo":15}],24:[function(require,module,exports){
